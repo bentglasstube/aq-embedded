@@ -4,7 +4,7 @@ BIN=aq
 
 all: ${BIN}
 
-obj/%.o: src/%.c
+obj/%.o: src/%.c src/data.h
 	@mkdir -p $(@D)
 	${CC} -c ${CFLAGS} -o $@ $<
 
