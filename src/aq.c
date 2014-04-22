@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "data.h"
+
 static const size_t buffer_size = 65536;
-static const char *quest_base = "[0] wants you to [1].";
 
 void generate_quest(char* buffer, const size_t len) {
   char before[len], after[len], middle[4];
