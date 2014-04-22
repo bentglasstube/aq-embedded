@@ -16,7 +16,6 @@ void generate_quest(char* buffer, const size_t len) {
   char *start, *end;
 
   strncpy(buffer, quest_base, len);
-  printf("%s\n", buffer);
 
   while (start = strchr(buffer, '[')) {
     end = strchr(buffer, ']');
@@ -57,14 +56,11 @@ void generate_quest(char* buffer, const size_t len) {
     else if (strcmp(middle, "person")    == 0) strncpy(replace, quest_person[rand_int(14)],    len);
     else if (strcmp(middle, "place")     == 0) strncpy(replace, quest_place[rand_int(7)],      len);
     else if (strcmp(middle, "cc")        == 0) strncpy(replace, quest_cc[rand_int(10)],        len);
-    else printf("Uknown class %s", middle);
 
     buffer[0] = 0;
     strncat(buffer, before, len);
     strncat(buffer, replace, len - strlen(buffer));
     strncat(buffer, after, len - strlen(buffer));
-
-    printf("%s\n", buffer);
   }
 };
 
