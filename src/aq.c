@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <time.h>
 
 #include "data.h"
 
@@ -68,7 +69,7 @@ void generate_quest(char* buffer, const size_t len) {
 };
 
 int main(int argc, char** argv) {
-  srandom(42);
+  srandom(time(NULL));
 
   char quest[buffer_size];
   generate_quest(quest, buffer_size);
