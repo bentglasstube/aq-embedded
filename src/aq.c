@@ -28,7 +28,7 @@ static const list data[] = {
   { 19, (const char * const []){ "shady","wealthy","cryptic","mysterious","dying","disgruntled","hoary","skittish","frantic","mysterious","worried","vacant","crippled","stocky","peg-legged","one-eyed","lecherous","destitute","ghostly" } },
   {  7, (const char * const []){ "Demon","Dragon","Vampire","Goblin","Orc","Troll","Kobold" } },
   {  1, (const char * const []){ "|A|X|F|X|G" } },
-  {  7, (const char * const []){ "|Q, the |P |W","a rival","the |H |Q","the |M of |Q","the |P of |U","the pirates of the |Q Sea" } },
+  {  6, (const char * const []){ "|Q, the |P |W","a rival","the |H |Q","the |M of |Q","the |P of |U","the pirates of the |Q Sea" } },
   { 11, (const char * const []){ "12","20","25","40","50","75","100","200","250","500","100" } },
   { 14, (const char * const []){ "aristocrat","dwarf","elf","ex-adventurer","farmer","gnome","mercenary","merchant","peasant","pirate","sage","traveler","vagabond","wizard" } },
   {  7, (const char * const []){ "|Q |Q","the |Q |K","the |L of |Q","Lake |Q","the town of |Q","the lost city of |Q","the ancient ruins of |Q" } },
