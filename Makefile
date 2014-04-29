@@ -12,7 +12,8 @@ ${BIN}: ${OBJ}
 	${CC} -o $@ ${OBJ} ${LDFLAGS}
 
 clean:
-	rm -f ${BIN} ${OBJ} obj/
+	rm -f ${BIN} ${OBJ}
+	rmdir obj
 
 install: all
 	mkdir -p ${DESTDIR}${PREFIX}/bin
